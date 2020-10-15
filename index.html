@@ -4,65 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .footer {  
-            background-color: black;
-            font-size: 90%;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            align-self: start;
-            margin-top: 10px;
-        }
-
-        .footer a{
-            color: white;
-        }
-
-        .boton{
-            border-radius: 65px 65px 65px 65px;
-            border-width: 0px;
-            color: white;
-            background-color: dodgerblue;
-            position: relative;
-        }
-
-        .imagen{
-            align-content: center;
-            
-            
-        }
-
-        .body{
-            max-width: 100%;
-            margin: auto;
-            text-align: center;
-            background-color: silver;
-            font-family: sans-serif;
-        }
-
-        .seccion{
-            align-items: center;
-            width: 300px;
-            margin: auto;
-        }
-
-        .seccion2{
-            margin: auto;
-            width: 1000px;
-        }
-        .articulo{
-            width: 960px;
-        }
-
-    </style>
-    <script>
-        function cambioImagen(){
-            (document.getElementById("myImg").src == "https://64.media.tumblr.com/eb60adf85c3eca85889d6fb98e937b4c/216c736bc4fb310e-a6/s640x960/75636a95a7a4db1a32fe0c70a25fd527c2799467.jpg")?document.getElementById("myImg").src ="https://i.pinimg.com/736x/b3/c5/00/b3c500244d9ad1cbfc70be4ea3ad012a.jpg":document.getElementById("myImg").src = "https://64.media.tumblr.com/eb60adf85c3eca85889d6fb98e937b4c/216c736bc4fb310e-a6/s640x960/75636a95a7a4db1a32fe0c70a25fd527c2799467.jpg";
-        }
-    </script>
+    <title>Trabajo con selectores</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body class="body">
@@ -89,7 +32,9 @@
                 que quieras para tu documento.
             </p>
             <section class="seccion">
-                <img id="myImg" class="imagen" src="https://64.media.tumblr.com/eb60adf85c3eca85889d6fb98e937b4c/216c736bc4fb310e-a6/s640x960/75636a95a7a4db1a32fe0c70a25fd527c2799467.jpg" alt="imagen" width="300" height="200">
+                <img id="myImg" class="imagen"
+                    src="https://art.ngfiles.com/images/648000/648317_decemyriagone_remastered-madness-sierra-nevada-thumbnail.png?f1538625954"
+                    alt="imagen" width="300" height="200">
                 <button class="boton" onclick="cambioImagen()">Cambiar imagen</button>
             </section>
         </article>
