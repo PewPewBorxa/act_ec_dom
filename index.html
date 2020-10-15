@@ -6,12 +6,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Ahora trabajando con DOM dinámico</title>
     <link rel='stylesheet' href='css/index.css'>
-    <script src='js/main.js'></script>
+
 </head>
 
 <body class="body">
     <h1>Trabajo con selectores</h1>
-    <section id='SeccionPrincipal' class='seccionPrincipal'>
+    <section id='S1' class='seccionPrincipal'>
         <article class='articulo'>
             <p>Crea un documento HTML que tenga un título de cabecera de primer nivel “Trabajo
                 con selectores” y a continuación contenga un párrafo, dentro de un artículo, con este
@@ -32,11 +32,11 @@
                 Tu nombre y el símbolo de copyright deben conformar un enlace al modelo de licencia
                 que quieras para tu documento.
             </p>
-            <section id='SeccionInterna' class='seccionInterna'>
+            <section id='S2' class='seccionInterna'>
                 <img id='myImg' class='imagen'
                     src='https://art.ngfiles.com/images/648000/648317_decemyriagone_remastered-madness-sierra-nevada-thumbnail.png?f1538625954'
                     alt='imagen' width='300' height='200'>
-                <button id='myBtn' class='boton' onclick='cambioImagen()'>Cambiar imagen</button>
+                <button id='myBtn' class='botonDeshabilitado' onclick='cambioImagen()'>Cambiar imagen</button>
             </section>
         </article>
     </section>
@@ -44,5 +44,6 @@
         <a href='https://creativecommons.org/licenses/?lang=es'>© Borja Torregrosa Lorente - 2020</a>
     </footer>
 </body>
+<script src='js/main.js'></script>
 
 </html>

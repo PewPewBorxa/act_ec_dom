@@ -3,8 +3,20 @@ const boton = document.getElementById('myBtn');
 const checkbox = document.createElement('input');
 checkbox.type = 'checkbox';
 checkbox.id = 'myCbx';
-const sect = document.getElementById('SeccionInterna');
-sect.insertBefore(checkbox, img);
+const elemLbl = document.createElement('label');
+elemLbl.setAttribute('for', 'myCbx');
+checkbox.setAttribute('onchange', 'SeleccionaImagen()');
+elemLbl.appendChild(document.createTextNode('Seleccionar imagen'));
+document.getElementById('S2').insertBefore(checkbox, img);
+document.getElementById('S2').insertBefore(elemLbl, img);
+
+function SeleccionaImagen() {
+    if (document.getElementById('myCbx').checked === true) {
+        document.getElementById('myBtn').className = 'boton';
+    } else {
+        document.getElementById('myBtn').className = 'botonDeshabilitado';
+    }
+}
 
 function cambioImagen() {
 
@@ -15,6 +27,7 @@ function cambioImagen() {
         (elemImg.src == imagen1) ? elemImg.src = imagen2 : elemImg.src = imagen1;
         const elemBtn = document.getElementById('myBtn');
         elemBtn.className = 'botonDeshabilitado';
+        document.getElementById('myCbx').checked = false;
     }
 
 }
