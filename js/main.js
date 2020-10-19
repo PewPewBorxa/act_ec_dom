@@ -9,6 +9,9 @@ checkbox.setAttribute('onchange', 'SeleccionaImagen()');
 elemLbl.appendChild(document.createTextNode('Seleccionar imagen'));
 document.getElementById('S2').insertBefore(checkbox, img);
 document.getElementById('S2').insertBefore(elemLbl, img);
+const h1 = document.getElementById('h1');
+h1.setAttribute('class', 'h1');
+h1.appendChild(document.createTextNode('Ahora trabajando con DOM dinámico'));
 
 function SeleccionaImagen() {
     if (document.getElementById('myCbx').checked === true) {
