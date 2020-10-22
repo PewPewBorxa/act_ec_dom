@@ -48,16 +48,16 @@
     width: 960px;
 }
 
-p {
+.parrafo {
     font-size: 50%;
 }
 
-a {
+.enlace {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+.enlace:hover {
     color: white;
     text-decoration: underline;
 }
