@@ -30,6 +30,10 @@ for (i = 0; i <= botones.length; i++) {
     console.log(iD);
 }
 
+const h1 = document.getElementsByTagName('h1');
+h1[0].removeChild(h1[0].firstChild);
+h1[0].appendChild(document.createTextNode('Ahora trabajando con DOM dinámico'));
+
 const img = document.getElementById('myImg0');
 const boton = document.getElementById('myBtn0');
 
@@ -60,7 +64,6 @@ function cambioImagen() {
         const imagen2 = 'https://i.pinimg.com/736x/b3/c5/00/b3c500244d9ad1cbfc70be4ea3ad012a.jpg';
         const elemImg = document.getElementById('myImg0');
         (elemImg.src == imagen1) ? elemImg.src = imagen2 : elemImg.src = imagen1;
-        
         elemBtn.className = 'botonDeshabilitado';
         document.getElementById('myCbx').checked = false;
     }
