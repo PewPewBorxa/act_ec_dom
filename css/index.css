@@ -1,0 +1,22 @@
+.botones {
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: white;
+}
+
+.botones:hover {
+    background-color: orange;
+    color: black;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #5d5d5d;
+}
+
+.errores {
+    background-color: grey;
+    color: indianred;
+    border: solid 1px red;
+}
